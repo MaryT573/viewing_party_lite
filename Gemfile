@@ -23,7 +23,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'faraday'
+gem 'faker'
+gem 'factory_bot_rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -39,11 +42,14 @@ group :development, :test do
   gem 'pry'
 end
 
-group :development do
+group :development, :test do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop-rails'
+  gem 'figaro'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :test do
