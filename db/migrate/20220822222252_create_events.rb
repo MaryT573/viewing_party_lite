@@ -3,8 +3,8 @@ class CreateEvents < ActiveRecord::Migration[5.2]
     create_table :events do |t|
       t.date :event_date
       t.time :start_time
-      t.int :duration
-      t.int :movie_id
+      t.integer :duration
+      t.string :movie_id
 
       t.timestamps
     end
