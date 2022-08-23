@@ -1,12 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -17,10 +11,12 @@
         "branches": {
         }
       },
-      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/models/attendee.rb": {
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/models/event_user.rb": {
         "lines": [
           0,
           0,
+          0,
+          null,
           0,
           0
         ],
@@ -40,6 +36,8 @@
         "lines": [
           0,
           0,
+          null,
+          0,
           0
         ],
         "branches": {
@@ -47,6 +45,8 @@
       },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/models/user.rb": {
         "lines": [
+          0,
+          0,
           0,
           0
         ],
@@ -90,6 +90,13 @@
         "branches": {
         }
       },
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/event_users_controller.rb": {
+        "lines": [
+
+        ],
+        "branches": {
+        }
+      },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/users_controller.rb": {
         "lines": [
           0,
@@ -120,9 +127,10 @@
         "branches": {
         }
       },
-      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/eventsusers_controller.rb": {
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/helpers/application_helper.rb": {
         "lines": [
-
+          0,
+          0
         ],
         "branches": {
         }
@@ -148,6 +156,6 @@
         }
       }
     },
-    "timestamp": 1661220205
+    "timestamp": 1661222191
   }
 }
