@@ -1,8 +1,15 @@
-Issue #:
+## Issue #(s): 
+> 
 
-Fixes/Updates:
+### Fixes: 
+- 
+### Completes:
+> - 
+### Updates:
+> - 
 
-Needs to be addressed:
+## Needs to be addressed:
+- 
 
-
-Yay! I did a great job!!
+**Notes**:
+_Yay! I did a great job!!_
