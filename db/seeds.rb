@@ -14,5 +14,5 @@ end
 end
 
 20.times do
-  FactoryBot.create(:attendee)
+  FactoryBot.create(:event_user)
 end
