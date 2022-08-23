@@ -26,5 +26,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+<<<<<<< HEAD
 
 coverage
+=======
+coverage
+>>>>>>> a96be53ca3cdfb713e0cae4990f44e2be0cc1c96
