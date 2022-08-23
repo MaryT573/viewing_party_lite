@@ -17,8 +17,7 @@
     <%= form.label :email %>
     <%= form.text_field :email %>
 
-    <%# yield added for password field to be passed from users registration route %>
-    <%# password field not added to new user registration from landing page %>
+    <%# yield added for password field to be passed later when needed %>
     <%= yield %>
 
     <%= form.submit 'Submit' %>
