@@ -1,12 +1,25 @@
 class MovieService
   # can search movie, TV show or person
-  def self.movies(title)
+  def self.movies
     response = conn.get("movie/api_key=#{api_key}")
     parse_json(response)
   end
+
+  def self.tv_shows
+    response = conn.get("tv/api_key=#{api_key}")
+    parse_json(response)
+  end
+
+  def self.person
+    response = conn.get("person/api_key=#{api_key}")
+    parse_json(response)
+  end
     
-  json = JSON.parse(response.body, symbolize_names: true)
+  def parse_json(response)
+    JSON.parse(response.body, symbolize_names: true)
+  end
     
+  private
   def self.conn
     Faraday.new(
       url: 'https://api.themoviedb.org/3/search/'
