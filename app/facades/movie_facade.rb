@@ -1,5 +1,5 @@
 class MovieFacade
-    def self.search_movies(title)
-        read = MovieService.movies(title)
-    end
+  def self.search_movies(title)
+    read = MovieService.movies(title)
+  end
 end
