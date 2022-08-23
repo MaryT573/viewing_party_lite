@@ -93,6 +93,58 @@
         "branches": {
         }
       },
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/facades/movie_facade.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/poros/movie.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -110,7 +162,16 @@
       },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/movies_controller.rb": {
         "lines": [
-
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
         "branches": {
         }
@@ -118,6 +179,30 @@
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/event_users_controller.rb": {
         "lines": [
 
+        ],
+        "branches": {
+        }
+      },
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/services/movie_service.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
         ],
         "branches": {
         }
@@ -143,6 +228,6 @@
         }
       }
     },
-    "timestamp": 1661222941
+    "timestamp": 1661290176
   }
 }
