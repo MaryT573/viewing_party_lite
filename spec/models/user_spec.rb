@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Users, type: :model do
+RSpec.describe User, type: :model do
   it { should have_many(:events) }
-  it { should have_many(:events_users) }
+  it { should have_many(:event_users) }
 end
