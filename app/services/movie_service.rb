@@ -1,18 +1,38 @@
-class MovieService
+class MovieService 
+  def parse_json(response)
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   # can search movie, TV show or person
   def self.movies(title)
-    response = conn.get("movie/api_key=#{api_key}")
+    response = conn.get do |req|
+      req.url("3/search/movie")
+      req.params = { api_key: Figaro.env.movie_api_key, query: title, page: 1 }
+    end
+    parse_json(response) if response != nil
+  end
+
+  def self.trending_movies
+    response = conn.get("3/trending/movie/week")
+    parse_json(response)
+  end
+
+  def self.tv_shows
+    response = conn.get("tv/api_key=#{api_key}")
+    parse_json(response)
+  end
+
+  def self.person
+    response = conn.get("person/api_key=#{api_key}")
     parse_json(response)
   end
     
-  json = JSON.parse(response.body, symbolize_names: true)
-    
+  private
   def self.conn
-    Faraday.new(
-      url: 'https://api.themoviedb.org/3/search/'
-      params: { api_key: ENV["MOVIES_API_KEY"] }
-      ) do |faraday|
-        faraday.adapter Faraday.default_adapter
+    Faraday.new("https://api.themoviedb.org") do |faraday|
+      Faraday::FlatParamsEncoder.sort_params = false
+      faraday.options.params_encoder = Faraday::FlatParamsEncoder
+      faraday.adapter Faraday.default_adapter
     end
   end
 end

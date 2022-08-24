@@ -14,7 +14,7 @@
 #
 require 'simplecov'
 SimpleCov.start 'rails'
-SimpleCov.add_filter ['spec', 'config']
+SimpleCov.add_filter ['spec', 'config', 'db', 'lib', 'log', 'public', 'vendor', 'tmp', 'storage', 'bin', 'app/channels', 'app/jobs', 'app/mailers', 'app/models/concerns', 'app/helpers', 'app/controllers/concerns', 'app/assets']
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
