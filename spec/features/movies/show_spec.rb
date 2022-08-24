@@ -8,7 +8,7 @@ RSpec.describe 'movie show', type: :feature do
     response = MovieFacade.search_movies("Finding Nemo")
     response = response[0].id
     #require pry, binding.pry
-    visit "/users/#{user1.id}/movies/#{response}"
+    #visit "/users/#{user1.id}/movies/#{response}"
  end
     
     it 'has button to return to discover page', :vcr do
