@@ -1,1 +1,5 @@
-<%= yield %>
+<% if params[:trending] %>
+  <%= render 'trending' %>
+<% else %>
+  <%= render 'results' %>
+<% end %>
