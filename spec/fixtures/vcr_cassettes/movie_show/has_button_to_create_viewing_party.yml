@@ -40,15 +40,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 88bce767af5e31f726ade38ea5253bd4.cloudfront.net (CloudFront)
+      - 1.1 d898fedd2c97412525c0a8011787cf32.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - ImJPOVzogO9o50wG_MkEaGpiQ-6Ax398ckGDFvQNqd5NloCgFV1dpA==
+      - RdvEcLH_yWWxOdOqXmFiTsfsoTUBH-vL-PNfrS75aMozrtiSN8EjNw==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/bvpI11RJbE6lHSWCrhvNC1S1MtO.jpg","genre_ids":[16,10751],"id":12,"original_language":"en","original_title":"Finding
