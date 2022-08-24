@@ -1,15 +1,20 @@
 class MovieService 
-  def parse_json(response)
-    JSON.parse(response.body, symbolize_names: true)
-  end
+  # def parse_json(response)
+  #   JSON.parse(response.body, symbolize_names: true)
+  # end
 
   # can search movie, TV show or person
+  # def self.movies(title)
+  #   response = conn.get do |req|
+  #     req.url("3/search/movie")
+  #     req.params = { api_key: Figaro.env.movie_api_key, query: title, page: 1 }
+  #  end
+  #   parse_json(response) if response != nil
+  # end
+  
   def self.movies(title)
-    response = conn.get do |req|
-      req.url("3/search/movie")
-      req.params = { api_key: Figaro.env.movie_api_key, query: title, page: 1 }
-    end
-    parse_json(response) if response != nil
+    response = conn.get("3/search/movie?query=#{title}&api_key=#{ENV['MOVIES_API_KEY']}")
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.trending_movies

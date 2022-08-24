@@ -76,3 +76,5 @@ end
     config.default_cassette_options = { re_record_interval: 7.days }
     config.configure_rspec_metadata!
   end
+
+  
