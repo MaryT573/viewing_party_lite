@@ -10,7 +10,7 @@ class MovieService
 
   def self.movies(title)
     response = conn.get("3/search/movie?query=#{title}&api_key=#{ENV['MOVIES_API_KEY']}")
-    JSON.parse(response.body, symbolize_names: true)
+    result = JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.trending_movies

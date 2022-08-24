@@ -1,4 +1,4 @@
-class Movie
+class MoviePoros
   attr_reader :movie_data
 
   def initialize(movie_data)
@@ -7,6 +7,10 @@ class Movie
 
   def title
     @movie_data[:title]
+  end
+
+  def id
+    @movie_data[:id]
   end
 
   def release_date
