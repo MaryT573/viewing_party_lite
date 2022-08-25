@@ -10,7 +10,7 @@
 end
 
 15.times do
-  FactoryBot.create(:event)
+  FactoryBot.create(:movie)
 end
 
 20.times do

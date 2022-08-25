@@ -3,10 +3,11 @@ Rails.application.routes.draw do
 
   get '/register', to: 'landing#new'
 
-  get '/users/:id/discover', to: 'movies#index', as: 'movies'
-  post '/users/:id/discover', to: 'movies#search', as: 'search_movies'
+  get '/users/:id/discover', to: 'movies#index', as: 'discover'
+  post '/users/:id/discover', to: 'movies#search', as: 'search'
+  post '/users/:id/trending', to: 'movies#trending', as: 'trending'
 
   resources :users do
-    resources :movies, except: [:index, :show]
+    resources :movies, only: [:index, :show]
   end
 end

@@ -10,7 +10,7 @@ class MoviePoros
   end
 
   def id
-    @movie_data[:id]
+    @movie_data[:id].to_i
   end
 
   def release_date
@@ -22,7 +22,7 @@ class MoviePoros
   end
 
   def image_url
-    @movie_data[:image_url]
+    @movie_data[:poster_path]
   end
 
   def average_rating
@@ -34,6 +34,6 @@ class MoviePoros
   end
 
   def runtime
-    @movie_data[:runtime]
+    @movie_data[:runtime].to_i
   end
 end

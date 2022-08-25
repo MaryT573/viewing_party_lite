@@ -15,7 +15,7 @@ class MovieService
 
   def self.trending_movies
     response = conn.get("3/trending/movie/week")
-    parse_json(response)
+    JSON.parse(response.body, symbolize_names: true) 
   end
     
   private
