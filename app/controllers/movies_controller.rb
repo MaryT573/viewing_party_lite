@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
 
   def show
     if params[:search]
-      @movies = MovieFacade.search_movies(params[:search])
+      @movies = MovieFacade.search_movies(params[:search], params[:page])
     else
       @movies = MovieFacade.search_trending
     end

@@ -1,6 +1,6 @@
 class MovieFacade
-  def self.search_movies(title)
-    parsed_json = MovieService.movies(title)
+  def self.search_movies(title, num = 1)
+    parsed_json = MovieService.movies(title, num)
       parsed_json[:results].map do |movie_json|
         Movie.new(movie_json)
       end

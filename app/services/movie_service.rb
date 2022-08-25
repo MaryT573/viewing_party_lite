@@ -1,9 +1,9 @@
 class MovieService 
   # can search movie, TV show or person
-  def self.movies(title)
+  def self.movies(title, num)
     response = conn.get do |req|
       req.url("3/search/movie")
-      req.params = { api_key: Figaro.env.movie_api_key, query: title, page: 1 }
+      req.params = { api_key: Figaro.env.movie_api_key, query: title, page: num }
     end
     JSON.parse(response.body, symbolize_names: true) 
   end
