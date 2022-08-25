@@ -21,8 +21,8 @@ class MoviePoros
     @movie_data[:overview]
   end
 
-  def poster_path
-    @movie_data[:poster_path]
+  def image_url
+    @movie_data[:image_url]
   end
 
   def average_rating
@@ -33,7 +33,7 @@ class MoviePoros
     @movie_data[:genre][:name]
   end
 
-  def length
+  def runtime
     @movie_data[:runtime]
   end
 end

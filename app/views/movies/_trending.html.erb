@@ -1,1 +1,16 @@
-<h1>RENDERING!</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Movies</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @movies.each do |movie| %>
+        <tr>
+          <td><%= movie.title %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
