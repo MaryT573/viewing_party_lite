@@ -4,14 +4,14 @@ RSpec.describe 'user dashboard', type: :feature do
   let!(:user1) { FactoryBot.create(:user) }
   let!(:user2) { FactoryBot.create(:user) }
   let!(:user3) { FactoryBot.create(:user) }
-  let!(:event) { FactoryBot.create(:event) }
-  let!(:event2) { FactoryBot.create(:event) }
-  let!(:event3) { FactoryBot.create(:event) }
-  let!(:event_user) { FactoryBot.create(:event_user, user: user1, event: event, role: 0) }
-  let!(:event_user2) { FactoryBot.create(:event_user, user: user2, event: event2, role: 0) }
-  let!(:event_user3) { FactoryBot.create(:event_user, user: user3, event: event3, role: 0) }
-  let!(:event_user4) { FactoryBot.create(:event_user, user: user1, event: event2, role: 1) }
-  let!(:event_user5) { FactoryBot.create(:event_user, user: user1, event: event3, role: 1) }
+  let!(:event) { FactoryBot.create(:movie) }
+  let!(:event2) { FactoryBot.create(:movie) }
+  let!(:event3) { FactoryBot.create(:movie) }
+  let!(:event_user) { FactoryBot.create(:event_user, user: user1, movie: event, role: 0) }
+  let!(:event_user2) { FactoryBot.create(:event_user, user: user2, movie: event2, role: 0) }
+  let!(:event_user3) { FactoryBot.create(:event_user, user: user3, movie: event3, role: 0) }
+  let!(:event_user4) { FactoryBot.create(:event_user, user: user1, movie: event2, role: 1) }
+  let!(:event_user5) { FactoryBot.create(:event_user, user: user1, movie: event3, role: 1) }
   
   before(:each) do
     visit "/users/#{user1.id}"
@@ -31,7 +31,7 @@ RSpec.describe 'user dashboard', type: :feature do
 
     click_link "Discover Movies"
 
-    expect(current_path).to eq('/users/1/movies')
+    expect(current_path).to eq("/users/#{user1.id}/discover")
   end
 
   #add img_url, movie_name to event model

@@ -23,6 +23,11 @@
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -31,6 +36,14 @@
           1,
           1,
           1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
           null
         ]
       },
@@ -38,27 +51,17 @@
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
-          2,
-          2,
           null,
           null,
-          1,
-          0,
-          0,
           null,
           null,
-          1,
-          0,
-          0,
+          null,
           null,
           null,
           1,
@@ -68,10 +71,10 @@
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -89,6 +92,11 @@
       "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -97,53 +105,16 @@
           1,
           1,
           1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/poros/movie_poros.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
           1,
           0,
           null,
           null,
-          1,
-          1,
-          null,
           null,
           1,
           0,
-          null,
-          null,
-          1,
+          0,
           0,
           null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
           null,
           null
         ]
@@ -152,7 +123,9 @@
         "lines": [
           1,
           1,
-          3,
+          5,
+          5,
+          5,
           null,
           null,
           1,
@@ -176,6 +149,99 @@
           null
         ]
       },
+      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/movies_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/poros/movie_poros.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/events_controller.rb": {
         "lines": [
 
@@ -183,11 +249,25 @@
         "branches": {
         }
       },
-      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/movies_controller.rb": {
+      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/event_users_controller.rb": {
+        "lines": [
+
+        ],
+        "branches": {
+        }
+      },
+      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/sessions_controller.rb": {
         "lines": [
           0,
           0,
+          0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -200,15 +280,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/maryturpin/turing/3Module/project/viewing_party_lite/app/controllers/event_users_controller.rb": {
-        "lines": [
-
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1661383985
+    "timestamp": 1661455701
   }
 }
