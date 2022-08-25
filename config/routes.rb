@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   root 'landing#index'
 
-  get '/register', to: 'landing#new'
+  get '/register', to: 'users#new'
 
-  get '/users/:id/discover', to: 'movies#index', as: 'movies'
-  post '/users/:id/discover', to: 'movies#show', as: 'search_movies'
-  get '/users/:user_id/movies/:id', to: 'movies#show'
+  get '/users/:id/discover', to: 'movies#index', as: 'discover'
+  post '/users/:id/discover', to: 'movies#search', as: 'search'
+  post '/users/:id/trending', to: 'movies#trending', as: 'trending'
 
   resources :users do
-    resources :events
+    resources :movies, only: [:index, :show]
   end
 end

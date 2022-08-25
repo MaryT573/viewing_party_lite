@@ -10,7 +10,7 @@ class MoviePoros
   end
 
   def id
-    @movie_data[:id]
+    @movie_data[:id].to_i
   end
 
   def release_date
@@ -21,7 +21,7 @@ class MoviePoros
     @movie_data[:overview]
   end
 
-  def poster_path
+  def image_url
     @movie_data[:poster_path]
   end
 
@@ -33,7 +33,7 @@ class MoviePoros
     @movie_data[:genre][:name]
   end
 
-  def length
-    @movie_data[:runtime]
+  def runtime
+    @movie_data[:runtime].to_i
   end
 end

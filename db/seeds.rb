@@ -9,10 +9,10 @@
   FactoryBot.create(:user)
 end
 
-15.times do
-  FactoryBot.create(:event)
+30.times do
+  FactoryBot.create(:movie)
 end
 
-20.times do
+70.times do
   FactoryBot.create(:event_user)
 end

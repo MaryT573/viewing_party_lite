@@ -6,6 +6,6 @@ FactoryBot.define do
     movie_id { rand(1..20) }
     title { Faker::Movie.title }
     run_time { rand(1..200) }
-    img_url { Faker::Internet.url }
+    image_url { Faker::Internet.url }
   end
 end
