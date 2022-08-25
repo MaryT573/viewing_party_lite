@@ -1,0 +1,7 @@
+<%= form_with url: show_movies_path, local: true do |form| %>
+  <%= form.label :search, 'Search Movie by Title:' %>
+  <%= form.text_field :search %>
+  <%= form.submit 'Search' %>
+<% end %>
+
+<%= link_to "Top Ten Movies", show_movies_path, params: 'trending' %>
