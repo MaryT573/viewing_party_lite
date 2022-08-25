@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=movie_api_key&query=Finding%20Nemo
+    uri: https://api.themoviedb.org/3/search/movie?api_key=movie_api_key&page=1&query=Finding%20Nemo
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 24 Aug 2022 23:31:44 GMT
+      - Thu, 25 Aug 2022 19:42:32 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,13 +42,13 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d4fb3448d1a8d3229dcf0a89f4bbe7e8.cloudfront.net (CloudFront)
+      - 1.1 88bce767af5e31f726ade38ea5253bd4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-P2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 7A-4jO3JE3EtwR0Yncbc1THorYK50SlR7k1mv-0e0GnlBGJombOwCg==
+      - UzCWyVhrr8S-9DFb6kOQwda2tQGi3w6xfhfDa5FLO635RfUunBPPSA==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/bvpI11RJbE6lHSWCrhvNC1S1MtO.jpg","genre_ids":[16,10751],"id":12,"original_language":"en","original_title":"Finding
@@ -56,8 +56,8 @@ http_interactions:
         from his Great Barrier Reef home to a dentist''s office aquarium. It''s up
         to his worrisome father Marlin and a friendly but forgetful fish Dory to bring
         Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish,
-        hungry seagulls, and more along the way.","popularity":127.407,"poster_path":"/5lc6nQc0VhWFYFbNv016xze8Jvy.jpg","release_date":"2003-05-30","title":"Finding
-        Nemo","video":false,"vote_average":7.8,"vote_count":16718},{"adult":false,"backdrop_path":null,"genre_ids":[99,10751],"id":648081,"original_language":"en","original_title":"Children''s
+        hungry seagulls, and more along the way.","popularity":121.262,"poster_path":"/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg","release_date":"2003-05-30","title":"Finding
+        Nemo","video":false,"vote_average":7.8,"vote_count":16719},{"adult":false,"backdrop_path":null,"genre_ids":[99,10751],"id":648081,"original_language":"en","original_title":"Children''s
         Aquarium: Finding the Real Nemo & Dory","overview":"Looking to find the real
         Nemo and Dory? Well look no further than this unique program. Children will
         love watching clownfish play with one another and the the blue tang as it
@@ -65,56 +65,7 @@ http_interactions:
         Aquarium: Finding the Real Nemo & Dory","video":true,"vote_average":8,"vote_count":2},{"adult":false,"backdrop_path":"/1lqVrt3nEcAJV2GzKZfXvOsZcPQ.jpg","genre_ids":[12,16,35,10751],"id":127380,"original_language":"en","original_title":"Finding
         Dory","overview":"Dory is reunited with her friends Nemo and Marlin in the
         search for answers about her past. What can she remember? Who are her parents?
-        And where did she learn to speak Whale?","popularity":54.721,"poster_path":"/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg","release_date":"2016-06-16","title":"Finding
-        Dory","video":false,"vote_average":7,"vote_count":10763}],"total_pages":1,"total_results":3}'
-  recorded_at: Wed, 24 Aug 2022 23:31:44 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=movie_api_key&query=
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 422
-      message: Unknown
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Wed, 24 Aug 2022 23:31:44 GMT
-      Server:
-      - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
-      X-Cache:
-      - Error from cloudfront
-      Via:
-      - 1.1 16d72e0791ff01fc4470d27fc024527a.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-P2
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - reTNExGni7F-8489jNnVmil-ICn0RwWLDcD1P-dWv2FNaQYgO2rAmA==
-    body:
-      encoding: UTF-8
-      string: '{"errors":["query must be provided"]}'
-  recorded_at: Wed, 24 Aug 2022 23:31:44 GMT
+        And where did she learn to speak Whale?","popularity":55.132,"poster_path":"/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg","release_date":"2016-06-16","title":"Finding
+        Dory","video":false,"vote_average":7,"vote_count":10764}],"total_pages":1,"total_results":3}'
+  recorded_at: Thu, 25 Aug 2022 19:42:32 GMT
 recorded_with: VCR 6.1.0
