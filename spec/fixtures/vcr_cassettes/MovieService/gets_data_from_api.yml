@@ -25,7 +25,11 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
+<<<<<<< HEAD
       - Fri, 26 Aug 2022 14:47:22 GMT
+=======
+      - Fri, 26 Aug 2022 16:49:53 GMT
+>>>>>>> main
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,15 +46,25 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
+<<<<<<< HEAD
       - 1.1 d29afc70fc2fdadee440493854714224.cloudfront.net (CloudFront)
+=======
+      - 1.1 5957ea451aa45a9d254075e89c5df686.cloudfront.net (CloudFront)
+>>>>>>> main
       X-Amz-Cf-Pop:
       - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
+<<<<<<< HEAD
       - xtDgfeBhWFGONO4vNSO9CJiRpf3bnwInCUauMg2xw9e8KQwnjMMInw==
       Age:
       - '15'
+=======
+      - uZW3w5hWKkiY3eEh5YNyB2qRBt8OX4iVA27vngVKgel0xk8WfMGfzw==
+      Age:
+      - '554'
+>>>>>>> main
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/bvpI11RJbE6lHSWCrhvNC1S1MtO.jpg","genre_ids":[16,10751],"id":12,"original_language":"en","original_title":"Finding
@@ -69,5 +83,9 @@ http_interactions:
         search for answers about her past. What can she remember? Who are her parents?
         And where did she learn to speak Whale?","popularity":51.541,"poster_path":"/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg","release_date":"2016-06-16","title":"Finding
         Dory","video":false,"vote_average":7,"vote_count":10765}],"total_pages":1,"total_results":3}'
+<<<<<<< HEAD
   recorded_at: Fri, 26 Aug 2022 14:47:37 GMT
+=======
+  recorded_at: Fri, 26 Aug 2022 16:59:07 GMT
+>>>>>>> main
 recorded_with: VCR 6.1.0

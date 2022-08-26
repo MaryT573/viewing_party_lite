@@ -15,7 +15,6 @@ class MoviesController < ApplicationController
     @user = User.find(params[:id])
     @url = "https://image.tmdb.org/t/p/w500"
     @movies = MovieFacade.search_movies(params[:search], params[:page])
-    # require 'pry'; binding.pry 
     render :index
   end
 
@@ -25,9 +24,8 @@ class MoviesController < ApplicationController
   end
 
   def show
-    # require 'pry'; binding.pry 
     @url = "https://image.tmdb.org/t/p/w500"
-    @movie = @movie
+    @movie1 = movie_poro(movie_params)
   end
 
   def new
@@ -37,7 +35,7 @@ class MoviesController < ApplicationController
 
   def create
     @user = current_user
-    @movie = Movie.new(movie_params)
+    @movie = MoviePoros.new(movie_params)
     if @movie.save
       redirect_to user_movies_path(@user)
     else
