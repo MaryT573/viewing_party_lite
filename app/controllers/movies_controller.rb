@@ -32,12 +32,12 @@ class MoviesController < ApplicationController
 
   def new
     @user = current_user
-    @movie = Movie.new
+    @movie = MoviePoros.new(movie_params)
   end
 
   def create
     @user = current_user
-    @movie = Movie.new(movie_params)
+    @movie = MoviePoros.new(movie_params)
     if @movie.save
       redirect_to user_movies_path(@user)
     else
