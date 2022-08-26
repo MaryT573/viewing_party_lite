@@ -15,9 +15,11 @@ RSpec.describe 'user dashboard', type: :feature do
   
   before(:each) do
     visit "/users/#{user1.id}"
+    @url = "https://image.tmdb.org/t/p/w500"
   end
 
   it 'should show the users name' do
+    @url = "https://image.tmdb.org/t/p/w500"
     expect(page).to have_content(user1.username)
     expect(page).not_to have_content(user2.username)
   end
@@ -38,29 +40,26 @@ RSpec.describe 'user dashboard', type: :feature do
   describe "viewing parties", :vcr do
     it "shows parties that the user has been invited to" do
       within "#invited-parties" do
-        within "#event-#{event.id}-#{event.movie_id}" do
-          expect(page).not_to have_link(event.movie_id)
-          expect(page).to have_link(event2.movie_id)
-        end
+        within "#event-#{event2.id}-#{event2.movie_id}" do
+          within "#event-#{event2.id}-#{event2.title}" do
+            expect(page).not_to have_link(event.title)
+            expect(page).to have_link(event2.title)
+          end
 
-        within "#event-#{event.id}-image" do
-          expect(page).not_to have_image(event.image_url)
-          expect(page).to have_image(event2.image_url)
-        end
+          within "#event-#{event2.id}-image" do
+            expect(page).not_to have_image(event.image_url)
+            expect(page).to have_image(event2.image_url)
+          end
 
-        within "#event-#{event.id}-#{event.start_time}" do
-          expect(page).not_to have_content(event.start_time)
-          expect(page).to have_content(event2.start_time)
-        end
+          within "#event-#{event2.id}-#{event2.event_date}" do
+            expect(page).not_to have_content(event.event_date)
+            expect(page).to have_content(event2.event_date)
+          end
 
-        within "#event-#{event.id}-#{event.event_date}" do
-          expect(page).not_to have_content(event.event_date)
-          expect(page).to have_content(event2.event_date)
-        end
-
-        within "#event-#{event.id}-#{event.duration}" do
-          expect(page).not_to have_content(event.duration)
-          expect(page).to have_content(event2.duration)
+          within "#event-#{event2.id}-#{event2.duration}" do
+            expect(page).not_to have_content(event.duration)
+            expect(page).to have_content(event2.duration)
+          end
         end
       end
     end

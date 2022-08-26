@@ -19,7 +19,26 @@
       <tbody>
         <% @movies.each do |movie| %>
           <tr>
-            <td><%= link_to movie.title, user_movie_path(@user.id, movie), params: @movie = movie_poro(movie) %></td>
+<<<<<<< HEAD
+            <td>
+            <%# <#%= form_with model: investigation do |form| %> 
+            <%= form_with url: movie_info_path(@user.id, movie.id), method: :post do |form| %>
+              <div class="visually-hidden">
+                <% form.label movie.title %>
+                <% form.text_field movie.title %>
+                <% form.label movie.overview %>
+                <% form.text_field movie.overview %>
+                <% form.label movie.id %>
+                <% form.text_field movie.id %>
+                <% form.label movie.image_url %>
+                <% form.text_field movie.image_url %>
+                <% form.label movie.average_rating %>
+                <% form.text_field movie.average_rating %>
+                <% form.label movie.runtime %>
+                <% form.text_field movie.runtime %>
+              </div>
+              <%= link_to movie.title, movie_info_path(@user.id, movie.id), type: :submit %></td>
+            <% end %>
             <td><%= movie.overview %></td>
             <td><img src="<%= @url+movie.image_url %>" width="150px"></td>
           </tr>
