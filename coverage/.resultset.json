@@ -38,11 +38,11 @@
           1,
           null,
           1,
-          0,
+          5,
           null,
           null,
           1,
-          0,
+          5,
           null,
           null
         ]
@@ -52,11 +52,11 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
-          1,
+          2,
           null,
           null,
           null,
@@ -71,10 +71,10 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           null
@@ -104,8 +104,8 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
@@ -116,6 +116,7 @@
           null,
           null,
           1,
+          null,
           1,
           1,
           1,
@@ -123,7 +124,7 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -150,6 +151,7 @@
       },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/facades/movie_facade.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -210,6 +212,36 @@
           null
         ]
       },
+      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          5,
+          5,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/events_controller.rb": {
         "lines": [
 
@@ -220,38 +252,6 @@
       "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/event_users_controller.rb": {
         "lines": [
 
-        ],
-        "branches": {
-        }
-      },
-      "/Users/brennastuart/Documents/turing/2-and-3-mods/3-mod/projects/viewing_party_lite/app/controllers/users_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
         ],
         "branches": {
         }
@@ -282,6 +282,6 @@
         }
       }
     },
-    "timestamp": 1661483448
+    "timestamp": 1661526403
   }
 }
