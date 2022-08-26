@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
+    @url = "https://image.tmdb.org/t/p/w500"
     @invited_events = @user.invited_events
     @created_events = @user.created_events
   end

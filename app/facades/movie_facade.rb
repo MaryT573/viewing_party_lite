@@ -1,7 +1,6 @@
 class MovieFacade
   def self.search_movies(title, num = 1)
     parsed_json = MovieService.movies(title, num)
-    # require 'pry'; binding.pry 
       parsed_json[:results].map do |movie_json|
         MoviePoros.new(movie_json)
       end

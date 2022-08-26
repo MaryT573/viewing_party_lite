@@ -15,9 +15,11 @@ RSpec.describe 'user dashboard', type: :feature do
   
   before(:each) do
     visit "/users/#{user1.id}"
+    @url = "https://image.tmdb.org/t/p/w500"
   end
 
   it 'should show the users name' do
+    @url = "https://image.tmdb.org/t/p/w500"
     expect(page).to have_content(user1.username)
     expect(page).not_to have_content(user2.username)
   end
