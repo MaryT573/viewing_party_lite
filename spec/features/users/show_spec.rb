@@ -40,28 +40,23 @@ RSpec.describe 'user dashboard', type: :feature do
   describe "viewing parties", :vcr do
     it "shows parties that the user has been invited to" do
       within "#invited-parties" do
-        within "#event-#{event.id}-#{event.movie_id}" do
-          within "#event-#{event.id}-#{event.title}" do
+        within "#event-#{event2.id}-#{event2.movie_id}" do
+          within "#event-#{event2.id}-#{event2.title}" do
             expect(page).not_to have_link(event.title)
             expect(page).to have_link(event2.title)
           end
 
-          within "#event-#{event.id}-image" do
+          within "#event-#{event2.id}-image" do
             expect(page).not_to have_image(event.image_url)
             expect(page).to have_image(event2.image_url)
           end
 
-          within "#event-#{event.id}-#{event.start_time}" do
-            expect(page).not_to have_content(event.start_time)
-            expect(page).to have_content(event2.start_time)
-          end
-
-          within "#event-#{event.id}-#{event.event_date}" do
+          within "#event-#{event2.id}-#{event2.event_date}" do
             expect(page).not_to have_content(event.event_date)
             expect(page).to have_content(event2.event_date)
           end
 
-          within "#event-#{event.id}-#{event.duration}" do
+          within "#event-#{event2.id}-#{event2.duration}" do
             expect(page).not_to have_content(event.duration)
             expect(page).to have_content(event2.duration)
           end
