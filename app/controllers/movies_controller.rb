@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
   end
 
   def search
+    require 'pry'; binding.pry 
     @user = User.find(params[:id])
     @url = "https://image.tmdb.org/t/p/w500"
     @movies = MovieFacade.search_movies(params[:search], params[:page])
@@ -39,6 +40,6 @@ class MoviesController < ApplicationController
 
   private
   def movie_params
-    params.permit(:title, :release_date, :overview, :image_url, :average_rating, :genre, :runtime)
+    params.permit(movie => {:title, :release_date, :overview, :image_url, :average_rating, :genre, :runtime})
   end
 end

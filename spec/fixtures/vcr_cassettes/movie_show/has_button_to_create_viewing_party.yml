@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=movie_api_key&page=1&query=Finding%20Nemo
+    uri: https://api.themoviedb.org/3/search/movie?api_key=movie_api_key&page&query=Finding%20Nemo
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 25 Aug 2022 19:42:32 GMT
+      - Thu, 25 Aug 2022 20:45:44 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,13 +42,13 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 88bce767af5e31f726ade38ea5253bd4.cloudfront.net (CloudFront)
+      - 1.1 29f1da35ce271d2cdc88184ed0c1f86c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN52-P2
+      - DEN50-C2
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - UzCWyVhrr8S-9DFb6kOQwda2tQGi3w6xfhfDa5FLO635RfUunBPPSA==
+      - BXwxLl_2vjau5G8pN2FFz4kdvt3PrXXbaBbGfHc7iAsHPaCbZXgNJg==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/bvpI11RJbE6lHSWCrhvNC1S1MtO.jpg","genre_ids":[16,10751],"id":12,"original_language":"en","original_title":"Finding
@@ -67,5 +67,5 @@ http_interactions:
         search for answers about her past. What can she remember? Who are her parents?
         And where did she learn to speak Whale?","popularity":55.132,"poster_path":"/3UVe8NL1E2ZdUZ9EDlKGJY5UzE.jpg","release_date":"2016-06-16","title":"Finding
         Dory","video":false,"vote_average":7,"vote_count":10764}],"total_pages":1,"total_results":3}'
-  recorded_at: Thu, 25 Aug 2022 19:42:32 GMT
+  recorded_at: Thu, 25 Aug 2022 20:45:44 GMT
 recorded_with: VCR 6.1.0
