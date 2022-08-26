@@ -19,7 +19,7 @@
       <tbody>
         <% @movies.each do |movie| %>
           <tr>
-            <td><%= link_to movie.title, user_movie_path(@user.id, movie.id) %></td>
+            <td><%= link_to movie.title, user_movie_path(@user.id, movie), params: @movie = movie_poro(movie) %></td>
             <td><%= movie.overview %></td>
             <td><img src="<%= @url+movie.image_url %>" width="150px"></td>
           </tr>
