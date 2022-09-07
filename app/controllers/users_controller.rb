@@ -22,6 +22,17 @@ class UsersController < ApplicationController
   def login_form
   end
 
+  def login
+    @user = User.find_by(email: params[:email])
+    if @user&.authenticate(params[:password])
+      redirect_to user_path(@user)
+      flash[:success] = "Welcome back, #{@user.email}!"
+    else
+      redirect_to '/login'
+      flash[:error] = 'Invalid Credentials'
+    end
+  end
+
   private
   def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation)
