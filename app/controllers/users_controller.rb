@@ -13,10 +13,23 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      # log_in @user
       redirect_to user_path(@user), notice: 'User was successfully created.'
     else
       redirect_to new_user_path, alert: 'Something went wrong. User was not created.'
+    end
+  end
+
+  def login_form
+  end
+
+  def login
+    @user = User.find_by(email: params[:email])
+    if @user&.authenticate(params[:password])
+      redirect_to user_path(@user)
+      flash[:success] = "Welcome back, #{@user.email}!"
+    else
+      redirect_to '/login'
+      flash[:error] = 'Invalid Credentials'
     end
   end
 
