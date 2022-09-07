@@ -26,8 +26,12 @@ RSpec.describe 'Landing Page', type: :feature do
   it 'should have a link to go back to the landing page at the top of the page' do
     expect(page).to have_link('Viewing Party!', href: '/')
   end
+
+  it 'has link for login page' do
+    expect(page).to have_link('Log In')
+
+    click_on 'Log In'
+    
+    expect(current_path).to eq("/login")
+  end
 end
-#  Title of Application
-#  Button to Create a New User
-#  List of Existing Users which links to the users dashboard
-#  Link to go back to the landing page (this link will be present at the top of all pages)
