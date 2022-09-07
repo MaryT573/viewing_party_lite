@@ -24,4 +24,15 @@ RSpec.describe 'user login', type: :feature do
         expect(page).to have_content("Jim's Dashboard")
         expect(page).to have_content("Welcome back, Jim@jim.com!")
     end
+
+    it 'does sad path: Invailid credentials' do
+        visit "login"
+
+        fill_in 'Email', with: "Jim@jim.com"
+        fill_in 'Password', with: "12344"
+
+        click_on 'Log In'
+        
+        expect(page).to have_content('Invalid Credentials')
+    end
 end
