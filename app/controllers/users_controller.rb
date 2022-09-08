@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     @user = User.find_by(email: params[:email])
     if @user&.authenticate(params[:password])
       session[:user_id] = @user.id
-      redirect_to user_path(@user)
+      redirect_to user_path(@user) 
       flash[:success] = "Welcome back, #{@user.email}!"
     else
       redirect_to '/login'
