@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      session[:user_id] = @user.id
       redirect_to user_path(@user), notice: 'User was successfully created.'
     else
       redirect_to new_user_path, alert: 'Something went wrong. User was not created.'
@@ -25,6 +26,7 @@ class UsersController < ApplicationController
   def login
     @user = User.find_by(email: params[:email])
     if @user&.authenticate(params[:password])
+      session[:user_id] = @user.id
       redirect_to user_path(@user)
       flash[:success] = "Welcome back, #{@user.email}!"
     else
